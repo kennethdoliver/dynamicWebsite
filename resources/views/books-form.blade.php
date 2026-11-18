@@ -10,7 +10,7 @@
         @csrf
         <h1>Book Form</h1>
         <div>Nama Buku</div>
-        <input type="text" name="title">
+        <input type="text" name="title" required>
         <div>Penulis Buku</div>
         <input type="text" name="writer">
         <div>Tahun Terbit</div>

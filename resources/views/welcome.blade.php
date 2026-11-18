@@ -20,7 +20,7 @@
                 <td>{{$book->published_year}}</td>
                 <td><img src="{{$book->cover_path}}" alt="Book Cover"></td>
                 <td>
-                    <form method="POST" action="{{ route('destroy-book') }}">
+                    <form method="POST" action="{{ route('destroy-book', $book->id) }}">
                         @csrf
                         <input value="{{ $book->id }}" type="hidden" name="id">
                         <input type="submit" value="Delete">
